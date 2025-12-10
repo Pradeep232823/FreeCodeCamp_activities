@@ -1,0 +1,67 @@
+:root {
+  --color0: #f2f2f2;
+  --color1: #cce5ff;
+  --color2: #99ccff;
+  --color3: #66b2ff;
+  --color4: #3385ff;
+  --color5: #0066ff;
+
+  --solid-border: 3px solid black;
+  --dashed-border: 3px dashed black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+th, td {
+  padding: 8px;
+}
+
+/* Time heading cells */
+.time {
+  font-weight: bold;
+}
+
+/* Availability background colors */
+.available-0 { background-color: var(--color0); }
+.available-1 { background-color: var(--color1); }
+.available-2 { background-color: var(--color2); }
+.available-3 { background-color: var(--color3); }
+.available-4 { background-color: var(--color4); }
+.available-5 { background-color: var(--color5); }
+
+/* Row border rules */
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+/* Legend section */
+#legend {
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#legend-gradient {
+  width: 100%;
+  height: 25px;
+
+  /* ✅ Two color-stops per color, as a range, all in % */
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 32%,
+    var(--color2) 32% 48%,
+    var(--color3) 48% 64%,
+    var(--color4) 64% 80%,
+    var(--color5) 80% 100%
+  );
+}

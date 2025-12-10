@@ -1,0 +1,172 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <header>Web Development Docs</header>
+
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+    <a class="nav-link" href="#JavaScript_Introduction">JavaScript Introduction</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#APIs_and_Fetch">APIs and Fetch</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML is the standard language used to create websites.</p>
+      <p>It structures the content on a page using tags and elements.</p>
+      <p>HTML documents contain a series of nested tags.</p>
+
+      <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+      <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+
+      <ul>
+        <li>Heading Tags</li>
+        <li>Paragraph Tags</li>
+      </ul>
+
+      <p>HTML files usually have the .html extension.</p>
+    </section>
+
+    <section class="main-section" id="CSS_Fundamentals">
+      <header>CSS Fundamentals</header>
+      <p>CSS styles the visual appearance of HTML elements.</p>
+      <p>It includes colors, layout, spacing, and animations.</p>
+
+      <code>body { background: lightgray; }</code>
+
+      <ul>
+        <li>Selectors</li>
+        <li>Properties</li>
+      </ul>
+
+      <p>CSS allows responsive control over elements.</p>
+    </section>
+
+    <section class="main-section" id="JavaScript_Introduction">
+      <header>JavaScript Introduction</header>
+      <p>JavaScript is used for interactivity in web pages.</p>
+      <p>It can manipulate the DOM dynamically.</p>
+
+      <code>console.log("Hello JS");</code>
+
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+      </ul>
+
+      <p>JavaScript runs in the browser and on servers.</p>
+    </section>
+
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design ensures layout changes with screen size.</p>
+      <p>Media queries help developers adapt UI for different devices.</p>
+
+      <code>@media (max-width: 600px) { body { font-size: 14px; } }</code>
+
+      <ul>
+        <li>Fluid Layout</li>
+        <li>Flexbox</li>
+      </ul>
+
+      <p>Percentages and viewport units make design flexible.</p>
+    </section>
+
+    <section class="main-section" id="APIs_and_Fetch">
+      <header>APIs and Fetch</header>
+      <p>APIs allow apps to communicate with external services.</p>
+      <p>The Fetch API is used to request data from servers.</p>
+
+      <code>fetch("https://api.example.com")</code>
+
+      <ul>
+        <li>GET Requests</li>
+        <li>POST Requests</li>
+      </ul>
+
+      <p>Responses are processed asynchronously using promises.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: #222;
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+code {
+  display: block;
+  background: #f0f0f0;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+
+** end of styles.css **
+
